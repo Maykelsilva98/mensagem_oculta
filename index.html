@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Oculta</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <section>
+        <h2>Mensagem Oculta</h2>
+        <div class="card">
+            <form>
+                <label for="mensagem">Mensagem</label>
+                <input type="text" id="mensagem">
+                <select name="selecao" id="seletor">
+                    <option value="escolha">Faça uma esoclha</option>
+                    <option value="valor1" id="valor1">Cifra de cesar</option>
+                    <option value="valor2" id="valor2">base 64</option>
+                </select>
+                <div id="passo_cesar">
+                </div>
+            </form> 
+            <div id="radion-buttons">
+                <input type="radio" id="cod" name="cifra" value="cod">
+                <label for="codificar">Codificar</label>
+                <input type="radio" id="dec" name="cifra" value="deco">
+                <label for="decodificar">Decodificar</label>
+            </div>
+            <input id="submit" type="submit">
+            <label for="novaMensagem">Nova Mensagem</label>
+            <input type="text" id="novaMensagem">
+        </div>
+    </section>
+    <script src="./index.js" defer></script>
+</body>
+</html>
